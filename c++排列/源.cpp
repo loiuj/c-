@@ -1,9 +1,12 @@
 // ReSharper disable All
 #include <iostream>
-using namespace std;
 #include <string.h>
-#include "sort_relize.cpp"
+#include "sort_type.h"
 #include "compare.h"
+#include "sort_type.h"
+
+using namespace std;
+
 // ReSharper disable once CppParameterMayBeConst
 void PrintList(const int* a, int n)
 {
@@ -60,7 +63,7 @@ bool Compare(const Person& p1, const Person& p2)
 int num[10] = { 3,5,10,16,7,32,83,23,54,29 };
 Person persons[5] = { Person("张三",10),Person("李四",50),Person("王五",30),Person("小明",4),Person("小王",12) };
 
-void SortInsertText()
+void SortInsertTest()
 {
 	//测试分割排序，为了希尔排序而改装
 	SortDirect(num, 10, Compare, 3);
@@ -72,7 +75,7 @@ void SortInsertText()
 	PrintList(num, 10);
 }
 
-void BInsertSortText()
+void BInsertSortTest()
 {
 	BInsertSort(num, 10, Compare);
 	SortDirect(persons, 5, Compare);
@@ -83,7 +86,7 @@ void BInsertSortText()
 	PrintList(num, 10);
 }
 
-void ShellSortText()
+void ShellSortTest()
 {
 	int dlta[] = { 5,3,1 };
 	ShellSort<int>(num, 10, Compare, dlta, 3);
@@ -95,7 +98,7 @@ void ShellSortText()
 	PrintList(num, 10);
 }
 
-void BubbleSortText()
+void BubbleSortTest()
 {
 	BubbleSort(num, 10, Compare);
 	BubbleSort(persons, 5, Compare);
@@ -106,7 +109,7 @@ void BubbleSortText()
 	PrintList(num, 10);
 }
 
-void QSortText()
+void QSortTest()
 {
 	QSort(num, 0, 9, Compare);
 	QSort(persons, 0, 5, Compare);
@@ -117,7 +120,7 @@ void QSortText()
 	PrintList(num, 10);
 }
 
-void SelectSortText()
+void SelectSortTest()
 {
 	SelectSort(num, 10, Compare);
 	SelectSort(persons, 5, Compare);
@@ -129,7 +132,7 @@ void SelectSortText()
 }
 
 
-void HeapSortText()
+void HeapSortTest()
 {
 	HeapSort(num, 10, Compare);
 	HeapSort(persons, 5, Compare);
@@ -140,7 +143,7 @@ void HeapSortText()
 	PrintList(num, 10);
 }
 
-void MergeSortText()
+void MergeSortTest()
 {
 	int* t;
 	t = MergeSort(num, 10,Compare);
@@ -154,13 +157,13 @@ void MergeSortText()
 
 //int main()
 //{
-//	//SortInsertText();
-//	//BInsertSortText();
-//	//ShellSortText();
-//	//BubbleSortText();
-//	//QSortText();
-//	//SelectSortText();
-//	//HeapSortText();
-//	MergeSortText();
+//	SortInsertTest();
+//	BInsertSortTest();
+//	ShellSortTest();
+//	BubbleSortTest();
+//	QSortTest();
+//	SelectSortTest();
+//	HeapSortTest();
+//	MergeSortTest();
 //	return 0;
 //}

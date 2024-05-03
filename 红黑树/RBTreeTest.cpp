@@ -76,7 +76,6 @@ void Test()
 
 void PrintMenu()
 {
-	system("color f0");
 	cout << "*******************************" << endl;
 	cout << "***1 插入  2删除   其他退出 ***" << endl;
 	cout << "*******************************" << endl;

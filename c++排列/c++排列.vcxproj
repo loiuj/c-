@@ -133,7 +133,17 @@
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="algorithm.h" />
+    <ClInclude Include="BInsertSort.h" />
+    <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="compare.h" />
+    <ClInclude Include="FindKthLargest.h" />
+    <ClInclude Include="HeapSort.h" />
+    <ClInclude Include="MergeSort.h" />
+    <ClInclude Include="QSort.h" />
+    <ClInclude Include="SelectSort.h" />
+    <ClInclude Include="ShellSort.h" />
+    <ClInclude Include="SortDirect.h" />
     <ClInclude Include="sort_type.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

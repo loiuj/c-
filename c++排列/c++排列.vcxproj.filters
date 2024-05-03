@@ -35,5 +35,35 @@
     <ClInclude Include="compare.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SortDirect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BubbleSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BInsertSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FindKthLargest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

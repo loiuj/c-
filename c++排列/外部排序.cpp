@@ -2,9 +2,11 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+
+#include "sort_type.h"
 using namespace std;
 #include "compare.h"
-#include "sort_relize.cpp"
+
 #include <queue>
 enum
 {
@@ -385,7 +387,7 @@ void Text(int gamer_count)
 			complited_sort_line += gamer_count * sorted_line_len;
 			now_sorted_line = complited_sort_line;
 		}
-		
+
 		cout << "一次完成" << endl;
 	}
 	//因为最后还进行了一次交换，所以应该是read_txt_name，而不是write
@@ -394,12 +396,16 @@ void Text(int gamer_count)
 
 }
 
-int main()
+void start()
 {
 	read_txt_name = "file02.txt";
 	ClearText(read_txt_name);
 	write_txt_name = "file01.txt";
 	ClearText(write_txt_name);
 	Text(6);
-	return 0;
+}
+
+int main()
+{
+	start();
 }
