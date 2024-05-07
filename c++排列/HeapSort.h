@@ -6,6 +6,9 @@
 template<typename T>
 void HeapSort(T* a, int n, bool compare(const T&, const T&));
 
+//查看前先了解大跟堆，也就是一棵二叉树，父节点都大于子节点，那么根肯定就是最大的
+//我们所要做的就是每次提取根，然后让一个元素代替成为根，然后再用算法让他恢复成大根堆，一直循环直到没有节点了就结束了
+
 //已知R[s..m]中记录的关键字除R[s]外均满足堆的定义，本函数调整R[s]的关键字,使R[s..m]成为一个大根堆
 //s,m都为索引对应的下标
 template<typename T>

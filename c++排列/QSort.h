@@ -10,6 +10,7 @@
 template<typename T>
 void QSort(T* a, int low, int high, bool compare(const T&, const T&));
 
+//实现让其左边都小于他，右边都大于他
 template<typename T>
 int Parition(T* a, int low, int high, bool compare(const T&, const T&))
 {
@@ -28,6 +29,8 @@ int Parition(T* a, int low, int high, bool compare(const T&, const T&))
 }
 
 //将小于的放在前面，大于的放在后面
+//我们倒着来看，最后一趟如果三个元素排序，那么小于放前面大于放后面，那么他肯定就是有序的了
+//那我们倒数第二趟中，中间元素的左边都是小于他的，而他们在最后一趟已经被排成有序的了，而右边也是，然后层层回去就都是有序的了
 template<typename T>
 void QSort(T* a, int low, int high, bool compare(const T&, const T&))
 {

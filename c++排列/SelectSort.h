@@ -8,6 +8,7 @@ template<typename T>
 void SelectSort(T* a, int n, bool compare(const T&, const T&));
 
 //相当于冒泡排序，只不过不是每次两个都交互而变成了每趟只交换一次
+//第一趟选取整个数组最小的和第0个元素交换，第二趟从1~n中选取最小和第1个元素交换，第二趟从2~n选取最小交换
 template<typename T>
 void SelectSort(T* a, int n, bool compare(const T&, const T&))
 {

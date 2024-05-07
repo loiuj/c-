@@ -8,6 +8,8 @@ template<typename T>
 T* MergeSort(T* a, int n, bool compare(const T&, const T&));
 
 //普通的两个有序数组合并一个有序数组
+//归并是对两个已经有序的数组进行排序，我们需要开辟一个数组用来存储结果，我们先比较两个数组第一个元素，假设是从小到大，那么谁小谁为第一个，然后那个数组指向第二元素
+//因为两个数组已经有序，那么两个数组第一个元素中最小的那个肯定是整体中最小的那个，然后取完的可以理解为挪到了之前开辟的数组，也就是存储结果的数组中，然后再比较两个数组第一个元素
 template<typename T>
 void MergeArrangeSort(T* array, int start, int a_len, int b_len, T* tmp, bool compare(const T&, const T&))
 {

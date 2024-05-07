@@ -128,7 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="compare.cpp" />
-    <ClCompile Include="sort_relize.cpp" />
     <ClCompile Include="外部排序.cpp" />
     <ClCompile Include="源.cpp" />
   </ItemGroup>

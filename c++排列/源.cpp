@@ -1,4 +1,4 @@
-// ReSharper disable All
+
 #include <iostream>
 #include <string.h>
 #include "sort_type.h"
@@ -66,7 +66,7 @@ Person persons[5] = { Person("张三",10),Person("李四",50),Person("王五",30),Pers
 void SortInsertTest()
 {
 	//测试分割排序，为了希尔排序而改装
-	SortDirect(num, 10, Compare, 3);
+	SortDirect(num, 10, Compare, 5);
 	SortDirect(persons, 5, Compare);
 	for (int i = 0; i < 5; i++)
 	{
@@ -155,15 +155,15 @@ void MergeSortTest()
 	}
 }
 
-//int main()
-//{
-//	SortInsertTest();
-//	BInsertSortTest();
-//	ShellSortTest();
-//	BubbleSortTest();
-//	QSortTest();
-//	SelectSortTest();
-//	HeapSortTest();
-//	MergeSortTest();
-//	return 0;
-//}
+int main()
+{
+	SortInsertTest();
+	//BInsertSortTest();
+	//ShellSortTest();
+	//BubbleSortTest();
+	//QSortTest();
+	//SelectSortTest();
+	//HeapSortTest();
+	//MergeSortTest();
+	return 0;
+}

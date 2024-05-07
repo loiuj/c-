@@ -405,7 +405,7 @@ void start()
 	Text(6);
 }
 
-int main()
-{
-	start();
-}
+//int main()
+//{
+//	start();
+//}

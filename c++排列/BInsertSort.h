@@ -8,6 +8,7 @@
 template<typename T>
 void BInsertSort(T* a, int n, bool compare(const T&, const T&));
 
+//算法思想就是基于插入排序的优化，因为是插入到已经有序的序列中，所以可以使用二分查找加快查找速度，对于有序的数据都可以采用
 template<typename T>
 void BInsertSort(T* a, int n, bool compare(const T&, const T&))
 {

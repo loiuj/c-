@@ -10,7 +10,7 @@ template<typename T>
 void ShellSort(T* a, int length, bool compare(const T&, const T&), int* dlta, const int t);
 
 //应该不怎么用，不好掌握运算时间
-//就是分块来排序，然后越有规律直接排序就可以越快
+//就是分块来排序，然后越有规律直接排序就可以越快，因为插入排序越有序越快，希尔就是先让他尽可能有序然后再进行排序
 template<typename T>
 void ShellSort(T* a, int length, bool compare(const T&, const T&), int* dlta, const int t)
 {
